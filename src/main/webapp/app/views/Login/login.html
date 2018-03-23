@@ -1,0 +1,35 @@
+<form name="form" id="loginform"  ng-submit="login()" role="form" class="magic">
+	<center>
+		<h3><p class="talent"><b>NOKIA</p></h3>
+	</center>		
+	<br/> 
+	 <center>
+		<p  class="magic"><b>ALCATEL LUCENT</b></p>
+	</center>
+	<br/>
+	<div layout layout-sm="column">		
+	  <md-input-container flex>	
+	  <label>Corporate Short Login</label>			
+		<input type="text" name="name" id="name" ng-model="user.name" required />    
+		  </md-input-container>	
+	</div>
+	
+	 <div layout layout-sm="column">
+        <md-input-container   flex>
+        <label>Corporate Intranet Password</label>
+		<input type="password" name="password" ng-model="user.password" autofocus required/>
+    </md-input-container>
+	</div>
+				
+	<div id="{{error}}" style="color:red; margin-bottom: 10px;">{{error}}</div>
+      <div layout layout-sm="column" layout-align="center center">
+        <md-input-container>
+        <md-button class="md-primary md-raised loginS" type="submit" ng-disabled="!(user.name && user.password)">{{LoginText}}</md-button>
+        </md-input-container>        
+    </div>
+    <div ng-if="dataLoading"><center><md-progress-circular ng-if="dataLoading" class="md-accent md-hue-3" md-diameter="30px"></md-progress-circular></center></div>
+    <div ng-if="!dataLoading"><br/></div>   
+    <center> 	<p class="copyright">CopyRight 2018 Nokia. All Rights Reserved</p></center>	
+</form>
+
+

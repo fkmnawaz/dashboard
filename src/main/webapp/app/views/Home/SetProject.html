@@ -1,0 +1,34 @@
+<md-content> 
+	<font style="font-family:RobotoDraftRegular;">
+	<md-toolbar>
+	
+    	<div class="md-toolbar-tools">
+    		INSERT PROJECT
+    	<span flex></span>
+    	<md-button aria-label="close" class="md-icon-button" ng-click="cancel()">
+        	<ng-md-icon icon="close" style="fill: white" size="24"></ng-md-icon>
+      	</md-button>
+    	</div>
+  	</md-toolbar>
+  	<div layout-padding>    
+    <md-input-container>
+    <label>Project Name</label>
+    <input type="text" ng-model="project"/>   
+    </md-input-container>    
+    </div>
+    <md-list flex style="color:black;">
+    	<md-subheader class="md-no-sticky">ALREADY ADDED PROJECTS LIST</md-subheader>
+    	<md-list-item ng-repeat="project in projects">
+    		{{project.id}}. &nbsp;<p> {{ project.name }} </p>    
+  </md-list-item>
+    </md-list>
+    <div layout="column">
+    <md-button aria-label="cancel" class="md-raised md-primary" type="submit" ng-click="cancel()">
+   	Cancel
+  	</md-button>
+    <md-button aria-label="finish" class="md-raised md-primary" type="submit" ng-click="finish()" ng-disabled="!project">
+   	Finish
+  	</md-button>
+  	</div>
+</font>
+</md-content>

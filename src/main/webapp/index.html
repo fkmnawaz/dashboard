@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="NO-CACHE">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <title>NOKIA</title>    
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">      
+    <link rel="stylesheet" href="app/styles/app.css">
+    <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css" />    
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.css" >
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+    <link rel="stylesheet" href="bower_components/angular-ivh-treeview/dist/ivh-treeview.css">
+    <link rel="stylesheet" href="bower_components/angular-ivh-treeview/dist/ivh-treeview-theme-basic.css">   
+    <link rel="stylesheet" href="app/styles/style.css">          
+    <!-- endbuild -->
+  </head>
+  <body ng-app="dashboard">
+     <div ui-view ></div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script> 
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>    
+    <script src="bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.js"></script>    
+    <script src="bower_components/ng-csv/build/ng-csv.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+	<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>	
+	<script src="bower_components/angular-ivh-treeview/dist/ivh-treeview.js"></script>    
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="app/app.js"></script>
+        
+        <script src="app/scripts/login/LoginModule.js"></script>
+        <script src="app/scripts/login/LoginService.js"></script>
+    	<script src="app/scripts/login/LoginController.js"></script>
+        <!-- Home Module -->
+        <script src="app/scripts/home/HomeModule.js"></script>
+    	<script src="app/scripts/home/HomeConfig.js"></script>
+    	<script src="app/scripts/home/HomeController.js"></script>
+    	
+    	<script src="app/scripts/common/HeaderController.js"></script>
+    	<script src="app/scripts/common/HeaderService.js"></script>    	
+    	<script src="app/scripts/common/HeaderDirective.js"></script>    	
+    	
+    	<script src="app/scripts/admin/AdminController.js"></script>
+    	<script src="app/scripts/admin/AdminFactory.js"></script>
+    	<script src="app/scripts/admin/AdminConfig.js"></script>
+    	    	
+    	
+        <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {	
+  -webkit-font-smoothing: antialiased;  
+}
+
+
+label{
+	font-color:black;
+	
+}
+
+.talent{
+	font-size:40px;
+	color:#183693;
+	font-family: nokiaFont;
+}
+.magic{	
+	color:#183693;
+	font-family:sansationFont;
+}
+.loginS {  
+  width: 320px;
+  height:40px;      
+}
+
+
+@font-face {
+  font-family: 'RobotoDraftNormal';
+  font-style: normal;
+  font-weight: 300;
+  src: local('RobotoDraft Light'), local('RobotoDraft-Light'), url(roboto1.woff) format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraftRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RobotoDraft'), local('RobotoDraft-Regular'), url(roboto2.woff) format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraftMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('RobotoDraft Medium'), local('RobotoDraft-Medium'), url(roboto3.woff) format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraftBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('RobotoDraft Bold'), local('RobotoDraft-Bold'), url(roboto4.woff) format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraftItalic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('RobotoDraft Italic'), local('RobotoDraft-Italic'), url(roboto5.woff) format('woff');
+}
+
+
+
+@font-face {
+    font-family: nokiaFont;
+    src: url(NokiaKokia.ttf);
+}
+@font-face {
+    font-family: sansationFont;
+    src: url(Sansation_Regular.ttf);
+}		
+
+
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.card {
+	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+}
+
+.card:hover {
+ 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
